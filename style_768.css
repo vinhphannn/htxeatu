@@ -1,7 +1,7 @@
-@media screen and (max-width: 577px){
+@media screen and (max-width: 769px){
     .header{
         width: 100%;
-        height: 300px;
+        height: 400px;
         background-image: url(images/bg.jpg);
         /* background-color: rgba(0, 0, 0, 0.5); */
 
@@ -16,15 +16,15 @@
     }
 
     .header__navbar{
-        height: 50px;
+        height: 60px;
         margin: 0 auto;
         background-image: linear-gradient(0, #C38154,#884A39);
         /* position: fixed; */
         /* position: -webkit-sticky; */
-        top: 15px;
+        top: 20px;
         right: 20px;
         left: 20px;
-        border-radius: 20px;
+        border-radius: 30px;
         box-shadow:  0 4px 8px 0 rgba(97, 30, 30, 0.695), 0 6px 20px 0 rgba(255, 255, 255, 0.19);
         padding: 0 20px;
     }
@@ -35,10 +35,10 @@
     
     }
     .header_bard{
-        display: block;
+        display: none;
     }
     .header__menu{
-        display: none;
+        display: block;
     }
 
     .header__navbar-list{
@@ -50,10 +50,10 @@
 
     }
     .header__navbar-item{
-        padding: 5px;
-        font-size: 0.7rem;
+        padding: 14px 4px;
+        font-size: 1.4rem;
         color: var(--white-color);
-        margin: 10px;
+        margin: 0;
         border:4px solid rgba(255, 0, 0, 0) ;
         border-radius: 5px;
     }
@@ -63,23 +63,23 @@
     }
     .header__logo-icon{
         height: 40px;
-        margin: 5px;
+        margin: 10px;
     }
     .header_bard{
         font-size: 33px;
         color: rgba(255, 255, 255, 0.411);
-        margin: 0 10px;
+        margin: 5px 10px;
     }
 
     .header__text{
         margin: auto;
         text-align: center;
-        padding: 100px 20px 0 20px;
+        padding: 150px 20px 0 20px;
 
 
     }
     .header__tl1{
-        font-size: 3rem;
+        font-size: 3.5rem;
         color:#F9E0BB;
         font-family: 'Times New Roman', Times, serif;
         font-weight: 700;
@@ -102,14 +102,16 @@
         padding: 0;
     }
     .gt_content_2{
-        padding-top: 20px;
         display: flex;
         flex-wrap: wrap;
     }
     .gt_hinh{
         margin: 0;
         padding: 0;
-        order: 2;
+        order: 1;
+        display: flex;
+        justify-content: center;
+        overflow: hidden;
     }
     .gt_text{
         display: flex;
@@ -129,12 +131,12 @@
     .tit_item{
         font-size: 1.8rem;
         font-weight: 600;
-        margin: 0;
-        display: block;
+        margin-bottom: 20px;
+        display: none;
 
     }
     .tit_item1{
-        display: none;
+        
     }
 
     .gt_td{
@@ -148,7 +150,8 @@
         line-height: 30px;
     }
     .gt_img{
-        width: 100%;
+        height: 100%;
+        object-fit: cover;
         
     }
     .cn_img{
@@ -170,7 +173,7 @@
         flex-direction: column;
         justify-content: center; /* căn giữa theo chiều dọc */
         align-items: center; /* căn giữa theo chiều ngang */
-        width: 90%; /* có thể điều chỉnh kích thước của card_sp tùy ý */
+        width: 95%; /* có thể điều chỉnh kích thước của card_sp tùy ý */
         border-radius: 10px;
         background-color: white;
         margin: 20px auto;
@@ -270,9 +273,7 @@
     }
     .footer_mxh{
         display: flex;
-        justify-content: center;
-        border-bottom: 1px solid white;
-        display: none;
+        justify-content: space-around;
     }
     .footer_mxh-mobile{
         display: flex;
@@ -280,17 +281,17 @@
         border-bottom: 1px solid white;
         border-top: 2px solid white;
         padding: 0 20px;
+        display: none;
     }
     .footer_mxh_item{
-        padding: 20px;
-        margin: 0;
-
+        margin: 20px 0;
+        padding: 0;
     }
     .footer_mxh_item_link{
-        font-size: 2rem;
+        font-size: 1.5rem;
         text-decoration: none;
         color: white;
-        font-weight: 400;
+        font-weight: 500;
     }
     .footer_mxh_item_link:hover{
         color: rgb(223, 52, 52);
@@ -302,10 +303,10 @@
     }
     .footer_info_list{
         padding: 0;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.371);
+        border-bottom: none;
     }
     .footer_info_item{
-        margin: 20px;
+        margin: 15px;
         color: white;
         font-size: 1.5rem;
         padding: 5px 10px;
@@ -319,9 +320,12 @@
         color: white;
         font-weight: 400;
         list-style: none;
-        padding: 10px;
+        padding: 7px;
         /* border-bottom: 0.5px solid rgba(255, 255, 255, 0.59); */
 
+    }
+    .form_name{
+        font-size: 1.2rem;
     }
     .footer_info_link1{
         border-bottom:none;
@@ -340,6 +344,7 @@
         padding: 15px;
         justify-content: center;
     }
+
     .scroll_to_back{
         width: 50px;
         height: 50px;
