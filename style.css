@@ -61,7 +61,7 @@
 .header__text{
     margin: auto;
     text-align: center;
-    padding-top: 200px;
+    padding-top: 240px;
 
 }
 .header__tl1{
@@ -223,6 +223,9 @@
     justify-content: center;
     border-bottom: 1px solid white;
 }
+.footer_mxh-mobile{
+    display: none;
+}
 .footer_mxh_item{
     padding: 30px;
 
@@ -261,6 +264,13 @@
 .footer_tt{
     border-bottom: 1px solid white;
 }
+.form_container{
+    margin: 30px;
+}
+.form_name{
+    color: white;
+    font-size: 1.5rem;
+}
 .footer_nguon{
     display: flex;
     justify-content: center; /* căn giữa theo chiều ngang */
@@ -272,6 +282,7 @@
     padding: 15px;
     justify-content: center;
 }
+
 .scroll_to_back{
     width: 50px;
     height: 50px;
@@ -395,7 +406,7 @@
         color: #884A39;
     }
     .gt_nd{
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
     .gt_img{
         width: 100%;

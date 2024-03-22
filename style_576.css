@@ -16,7 +16,7 @@
     }
 
     .header__navbar{
-        height: 50px;
+        height: 60px;
         margin: 0 auto;
         background-image: linear-gradient(0, #C38154,#884A39);
         /* position: fixed; */
@@ -24,7 +24,7 @@
         top: 20px;
         right: 20px;
         left: 20px;
-        border-radius: 50%px;
+        border-radius: 17px;
         box-shadow:  0 4px 8px 0 rgba(97, 30, 30, 0.695), 0 6px 20px 0 rgba(255, 255, 255, 0.19);
         padding: 0 20px;
     }
@@ -63,11 +63,12 @@
     }
     .header__logo-icon{
         height: 40px;
-        margin: 5px;
+        margin: 10px;
     }
     .header_bard{
         font-size: 33px;
         color: rgba(255, 255, 255, 0.411);
+        margin: 5px 10px;
     }
 
     .header__text{
@@ -113,34 +114,36 @@
     .gt_text{
         display: flex;
         flex-direction: column;
-        padding:0 20px 20px 20px;
+        padding:20px 20px 20px 20px;
         text-align: justify;
         align-items: center;
-       order: 1;
+        order: 1;
         justify-content: center;
+
     }
     .tit{
         text-align: center;
-        margin-top: 50px;
+        margin-top: 30px;
     
     }
     .tit_item{
-        font-size: 2rem;
+        font-size: 1.8rem;
         font-weight: 600;
-        margin-bottom: 30px;
+        margin: 0;
+
     }
     .tit_item1{
-        display: none;
+        
     }
 
     .gt_td{
-        font-size: 2.5rem;
+        font-size: 2rem;
         font-weight: 600;
         color: #884A39;
-        margin-bottom: 20px;
+        margin-bottom: 15px;
     }
     .gt_nd{
-        font-size: 1.6rem;
+        font-size: 1.3rem;
         line-height: 30px;
     }
     .gt_img{
@@ -166,7 +169,7 @@
         flex-direction: column;
         justify-content: center; /* căn giữa theo chiều dọc */
         align-items: center; /* căn giữa theo chiều ngang */
-        width: 160px; /* có thể điều chỉnh kích thước của card_sp tùy ý */
+        width: 90%; /* có thể điều chỉnh kích thước của card_sp tùy ý */
         border-radius: 10px;
         background-color: white;
         margin: 20px auto;
@@ -228,38 +231,41 @@
 
     .selection{
         width: 100%;
-        height: 250px;
+        height: 150px;
         background-image: url(images/bg2.jpg);
-        background-blend-mode: overlay;
-        background-repeat: no-repeat;
         background-size: cover;
-        background-size: 100% auto;
+        background-position: center;
         align-items: baseline;
         display: flex;
         align-items: center;
 
     }
     .selection_tl{
-        font-size: 2.5rem;
+        font-size: 1.6rem;
         font-weight: 600;
         color:#F9E0BB;
 
     }
     .selection_tl_item{
-        margin: 20px;
+        margin: 10px;
     }
     .selection_tl1{
-        font-size: 1.7rem ;
+        font-size: 1.4rem ;
         text-decoration: none;
         color: #F9E0BB;
     }
     .trong{
         width: 100%;
-        height: 50px;
+        height: 30px;
         background-color:#f9c26f;
+        display: none;
     }
     .footer{
         background-color: rgb(26, 25, 25);
+    }
+    .footer_container{
+        display: flex;
+        justify-content: center;
     }
     .footer_mxh{
         display: flex;
@@ -267,8 +273,15 @@
         border-bottom: 1px solid white;
         display: none;
     }
+    .footer_mxh-mobile{
+        display: flex;
+        justify-content: space-around;
+        border-bottom: 1px solid white;
+        border-top: 2px solid white;
+        padding: 0 20px;
+    }
     .footer_mxh_item{
-        padding: 30px;
+        padding: 20px;
 
     }
     .footer_mxh_item_link{
@@ -281,21 +294,30 @@
         color: rgb(223, 52, 52);
         transition: 2s all ease;
     }
-
+    .footer__info{
+        padding: 0 20px;
+        
+    }
+    .footer_info_list{
+        padding: 0;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.371);
+    }
     .footer_info_item{
-        margin: 30px;
+        margin: 20px;
         color: white;
         font-size: 1.5rem;
-        border-left: 4px solid rgba(255, 255, 255, 0.59);
         padding: 5px 10px;
+        display: flex;
+        justify-content: center;
+        border-left: none;
     }
     .footer_info_link{
-        font-size: 1.5rem;
+        font-size: 1.4rem;
         text-decoration: none;
         color: white;
         font-weight: 400;
         list-style: none;
-        padding: 15px;
+        padding: 10px;
         /* border-bottom: 0.5px solid rgba(255, 255, 255, 0.59); */
 
     }
