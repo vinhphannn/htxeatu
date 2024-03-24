@@ -37,8 +37,10 @@
     .header_bard{
         display: none;
     }
+    
     .header__menu{
-        display: block;
+        display: flex;
+        align-items: center;
     }
 
     .header__navbar-list{

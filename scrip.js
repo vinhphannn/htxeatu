@@ -89,3 +89,29 @@ function getCurrentTime() {
     // Định dạng giờ và phút thành chuỗi "HH:MM"
     return (hours < 10 ? '0' : '') + hours + ':' + (minutes < 10 ? '0' : '') + minutes;
 }
+
+
+let currentIndex = 0;
+const carouselItems = document.querySelectorAll('.carousel-item');
+
+function showEvent(index) {
+  carouselItems.forEach((item, i) => {
+    item.style.transform = `translateX(${(i - index) * 100}%)`;
+  });
+}
+
+function movePrev() {
+  currentIndex = (currentIndex - 1 + carouselItems.length) % carouselItems.length;
+  showEvent(currentIndex);
+}
+
+function moveNext() {
+  currentIndex = (currentIndex + 1) % carouselItems.length;
+  showEvent(currentIndex);
+}
+
+// Auto move to next event every 3 seconds
+setInterval(moveNext, 5000);
+
+
+

@@ -357,4 +357,43 @@
     .scroll_to_back:hover{
         background-color:#3e221b ;
     }
+    /* event */
+  
+    .event{
+        height: 700px;
+        align-items: center;
+    }
+    .carousel{
+        height: 600px;
+    }
+    .carousel-item {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 600px;
+        transition: transform 0.5s ease;
+        background-color: hsl(13, 40%, 47%) ;
+    }
+
+    .event_hinh{
+        padding: 0;
+        height: 310px;
+        
+
+    }
+    .event_img{
+        height: 100%;
+        
+    }
+    .event_text_date{
+        font-size: 1.4rem;
+    }
+    .event_text_content{
+        font-size: 1.7rem;
+
+    }
+       
+    
+
 }
