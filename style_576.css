@@ -37,6 +37,58 @@
     .header_bard{
         display: block;
     }
+    .header_bard:hover{
+        .header_bard_menu{
+            display: block;
+        }
+    }
+    .bard_list{
+        padding:0 30px;
+    }
+ 
+    .header_bard_menu{
+        position: fixed;
+        top: 50px;
+        right: 4px;
+        left: 4px;
+        background-color: #e3bf89;
+        border-radius: 20px;
+        display: none;
+        animation: hienlen ease-in .2s;
+    
+    }
+
+    .bard_item{
+        list-style: none;
+        border-bottom: solid 2px #8c4e3b;
+        padding-bottom:3px ;
+        padding-top: 0;
+    }
+    .bard_item1{
+        list-style: none;
+        padding-bottom:3px ;
+        padding-top: 0;
+    }
+    .bar_item_link{
+        font-size: 1.5rem;
+        text-decoration: none;
+        color: #3e221b;
+        font-weight: 500;
+    }
+
+    /* animation */
+    @keyframes hienlen {
+        from{
+            opacity: 0;
+            transform: translateY(-100%);
+        }
+        to{
+            opacity: 1;
+            transform: translatey(0);
+        }
+        
+    }
+    
     .header__menu{
         display: none;
     }
