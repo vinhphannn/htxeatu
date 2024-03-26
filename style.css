@@ -409,13 +409,10 @@
     position: relative;
   }
   
-  .carousel-inner {
-    display: flex;
-    /* ngan tran */
-    overflow: hidden;
-  }
-  
   .carousel-item {
+   
+  }
+  .event_item{
     display: flex;
     justify-content: center;
     align-items: center;

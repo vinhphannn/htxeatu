@@ -366,7 +366,7 @@
     .carousel{
         height: 600px;
     }
-    .carousel-item {
+    .event_item{
         display: flex;
         flex-direction: column;
         justify-content: center;
