@@ -91,27 +91,31 @@ function getCurrentTime() {
 }
 
 
-// let currentIndex = 0;
-// const carouselItems = document.querySelectorAll('.carousel-item');
+// scroll top
+ // JavaScript to scroll to top when scroll_to_back button is clicked
+ document.getElementById('scroll_to_back').addEventListener('click', function() {
+  scrollToTop();
+});
 
-// function showEvent(index) {
-//   carouselItems.forEach((item, i) => {
-//     item.style.transform = `translateX(${(i - index) * 100}%)`;
-//   });
-// }
+// JavaScript to show/hide scroll_to_back button based on scroll position
+window.addEventListener('scroll', function() {
+  var scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
 
-// function movePrev() {
-//   currentIndex = (currentIndex - 1 + carouselItems.length) % carouselItems.length;
-//   showEvent(currentIndex);
-// }
+  // If scroll position is greater than 100px, show the button, else hide it
+  if (scrollPosition > 100) {
+      document.getElementById('scroll_to_back').style.display = 'block';
+  } else {
+      document.getElementById('scroll_to_back').style.display = 'none';
+  }
+});
 
-// function moveNext() {
-//   currentIndex = (currentIndex + 1) % carouselItems.length;
-//   showEvent(currentIndex);
-// }
+// JavaScript to scroll to top with smooth animation
+function scrollToTop() {
+  var currentScroll = document.documentElement.scrollTop || document.body.scrollTop;
 
-// // Auto move to next event every 3 seconds
-// setInterval(moveNext, 5000);
-
-
+  if (currentScroll > 0) {
+      window.requestAnimationFrame(scrollToTop);
+      window.scrollTo(0, currentScroll - (currentScroll / 5)); // Adjust the value to change scroll speed
+  }
+}
 

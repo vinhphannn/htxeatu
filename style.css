@@ -399,9 +399,7 @@
     align-items: center;
     justify-content: center;
   }
-  .tit_event{
 
-  }
   
   .carousel {
     width: 90%;
@@ -409,9 +407,7 @@
     position: relative;
   }
   
-  .carousel-item {
-   
-  }
+
   .event_item{
     display: flex;
     justify-content: center;
