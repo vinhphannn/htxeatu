@@ -2,14 +2,6 @@
     .header{
         width: 100%;
         height: 300px;
-        background-image: url(images/bg.jpg);
-        /* background-color: rgba(0, 0, 0, 0.5); */
-
-        /* background-blend-mode: overlay;
-        background-repeat: repeat; */
-        /* background-size: cover; */
-        /* background-size: 100% auto; */
-        /* align-items: baseline; */
         background-size: cover;
         background-position: center;
       
@@ -18,14 +10,10 @@
     .header__navbar{
         height: 50px;
         margin: 0 auto;
-        background-image: linear-gradient(0, #C38154,#884A39);
-        /* position: fixed; */
-        /* position: -webkit-sticky; */
         top: 15px;
         right: 20px;
         left: 20px;
         border-radius: 20px;
-        box-shadow:  0 4px 8px 0 rgba(97, 30, 30, 0.695), 0 6px 20px 0 rgba(255, 255, 255, 0.19);
         padding: 0 20px;
     }
     .header__navbar__content{
@@ -44,35 +32,37 @@
     }
     .bard_list{
         padding:0 30px;
+        margin: 0;
     }
  
     .header_bard_menu{
         position: fixed;
-        top: 50px;
+        top: 60px;
         right: 4px;
         left: 4px;
-        background-color: #e3bf89;
         border-radius: 20px;
+        background: rgba(0, 0, 0, 0.709);
+        backdrop-filter: blur(5px);
         display: none;
-        animation: hienlen ease-in .2s;
-    
+        animation: hienlen ease-out .4s;
     }
 
-    .bard_item{
+    .bard_item1,.bard_item{
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         list-style: none;
         border-bottom: solid 2px #8c4e3b;
-        padding-bottom:3px ;
         padding-top: 0;
     }
     .bard_item1{
-        list-style: none;
-        padding-bottom:3px ;
-        padding-top: 0;
+        border-bottom:none;
     }
     .bar_item_link{
         font-size: 1.5rem;
         text-decoration: none;
-        color: #3e221b;
+        color: #ffffffbd;
         font-weight: 500;
     }
 
