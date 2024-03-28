@@ -82,6 +82,15 @@
                <ul class="loc_list">
                     <li class="loc_item">CAFFE PHA FHIN</li>
                     <li class="loc_item">CAFFE PHA MÁY</li>
+                    <li class="loc_item"><div class="input-group">
+                        <div class="form-outline" data-mdb-input-init>
+                          <input type="search" id="form1" class="form-control" />
+                          <label class="form-label" for="form1">Search</label>
+                        </div>
+                        <button type="button" class="btn btn-primary" data-mdb-ripple-init>
+                          <i class="fas fa-search"></i>
+                        </button>
+                      </div></li>
                     <li class="loc_item">CAFFE HÒA TAN</li>
                     <li class="loc_item">CAFFE CHO QUÁN</li>
                </ul>
@@ -350,6 +359,12 @@
       
 
        <!-- scroll -->
+       <script>
+        // Initialization for ES Users
+import { Input, Ripple, initMDB } from "mdb-ui-kit";
+
+initMDB({ Input, Ripple });
+       </script>
 
     <!-- scrip -->
     <script src="scrip.js"></script>
