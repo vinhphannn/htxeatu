@@ -31,3 +31,15 @@ p{
     display: flex;
     flex-wrap: wrap;
 }
+.tit{
+    text-align: center;
+    font-size: 3rem;
+    padding: 20px;
+}
+.order2{
+    order: 2;
+}
+
+.order1{
+    order: 1;
+}

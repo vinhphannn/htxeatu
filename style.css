@@ -191,41 +191,6 @@
     font-size: 2rem;
     font-weight: 500;
 }
-
-
-
-.selection{
-    width: 100%;
-    height: 250px;
-    background-image: url(images/bg2.jpg);
-    background-blend-mode: overlay;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-size: 100% auto;
-    align-items: baseline;
-    display: flex;
-    align-items: center;
-
-}
-.selection_tl{
-    font-size: 2.5rem;
-    font-weight: 600;
-    color:#F9E0BB;
-
-}
-.selection_tl_item{
-    margin: 20px;
-}
-.selection_tl1{
-    font-size: 1.7rem ;
-    text-decoration: none;
-    color: #F9E0BB;
-}
-.trong{
-    width: 100%;
-    height: 50px;
-    background-color:#f9c26f;
-}
 .footer{
     background-color: rgb(26, 25, 25);
 }

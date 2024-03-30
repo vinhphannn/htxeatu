@@ -20,8 +20,8 @@
     margin: 0 auto;
     /* background-image: linear-gradient(0, #C38154,#884A39); */
     background: rgba(111, 32, 32, 0.71);
-    position: sticky;
-    position: -webkit-sticky;
+    position: fixed;
+    position: -webkit-fixed;
     top: 30px;
     right: 40px;
     left: 40px;
@@ -79,11 +79,89 @@
     font-size: 6rem;
     color:#eeddc4;
     font-weight: 500;
+    margin-bottom: 30px;
 }
 .header__tl2{
-    font-size: 3rem;
+    font-size: 2rem;
     color: var(--white-color);
     font-weight: 300;
+    font-weight: 400;
+    color:#eeddc4;
+}
+/* thanh lap */
+.thanh_lap{
+    background: #d8ac63;
+    padding: 30px 0;
+}
+.tl_item{
+    display: flex;
+    padding:0;
+}
+.tl_item_chu{
+    padding: 40px;
+}
+.tl_item_tl1{
+    font-size: 1.8rem;
+}
+.tl_item_hinh{
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    max-height: 500px;
+    padding: 0;
+}
+.tl_item_img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+/*  chung nhan*/
+.chung_nhan{
+    padding: 30px 0;
+}
+.cn_tit{
+    margin: 20px;
+}
+.cn_tit_text{
+    text-align: center;
+    font-size: 3rem;
+}
+.cn_inner{
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+}
+.cn_item_img{
+    width: 200px;
+}
+/* thuc te */
+.thuc_te{
+    background: #0d251b;
+    padding: 30px 0;
+}
+.tt_inner{
+    display: flex;
+    overflow: hidden;
+}
+.tt_item{
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    flex: 1;
+    justify-content: space-around;
+}
+.tt_hinh{
+    display: flex;
+    justify-content: center;
+}
+.tt_img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+.tt_text{
+    color: #d8ac63;
+    font-size: 2.2rem;
 }
 .footer{
     background-color: rgb(26, 25, 25);
@@ -280,7 +358,7 @@ input{
 .huongvi_item{
     display: flex;
     justify-content: center;
-    
+    flex: 1;
    
 }
 .huongvi_text{

@@ -58,12 +58,12 @@ function sendMessage() {
     var response;
     if (message.toLowerCase().includes("bây giờ là mấy giờ")) {
         response = "Bot: Hiện tại là " + getCurrentTime() + ".";
-    } else if (message.toLowerCase().includes("clb hoàng anh")) {
-        response = "Bot: Hôm nay CLB Hoàng Anh đá bóng thắng.";
+    } else if (message.toLowerCase().includes("helo")) {
+        response = "Bot: xin chào rất vui được gặp bạn.";
     } else if (message.toLowerCase().includes("web của tôi")) {
-        response = "Bot: Trang web của bạn viết về các bài báo.";
+        response = "Bot: HTX EATU COFFEE.";
     } else if (message.toLowerCase().includes("my web")) {
-        response = "Bot: Trang web của bạn viết về các bài báo.";
+        response = "Bot: Trang web của bạn viết về HTX nông nghiệp.";
     } 
      else {
         // Bot response (for demonstration purposes, this is a static response)
@@ -92,14 +92,21 @@ function getCurrentTime() {
 
 
 // scroll top
- // JavaScript to scroll to top when scroll_to_back button is clicked
- document.getElementById('scroll_to_back').addEventListener('click', function() {
-  scrollToTop();
-});
+// JavaScript to scroll to top with smooth animation
+function scrollToTop() {
+  var scrollStep = -window.scrollY / (500 / 15); // Tốc độ cuộn, 1000 là thời gian cuộn (ms)
+  var scrollInterval = setInterval(function(){
+      if (window.scrollY != 0) {
+          window.scrollBy(0, scrollStep);
+      } else {
+          clearInterval(scrollInterval);
+      }
+  },15);
+}
 
 // JavaScript to show/hide scroll_to_back button based on scroll position
 window.addEventListener('scroll', function() {
-  var scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
+  var scrollPosition = window.scrollY || document.documentElement.scrollTop;
 
   // If scroll position is greater than 100px, show the button, else hide it
   if (scrollPosition > 100) {
@@ -109,13 +116,11 @@ window.addEventListener('scroll', function() {
   }
 });
 
-// JavaScript to scroll to top with smooth animation
-function scrollToTop() {
-  var currentScroll = document.documentElement.scrollTop || document.body.scrollTop;
+// Add click event listener to the scroll_to_back button
+document.getElementById('scroll_to_back').addEventListener('click', function() {
+  scrollToTop();
+});
 
-  if (currentScroll > 0) {
-      window.requestAnimationFrame(scrollToTop);
-      window.scrollTo(0, currentScroll - (currentScroll / 5)); // Adjust the value to change scroll speed
-  }
-}
+// 
+$('.carousel').carousel()
 
