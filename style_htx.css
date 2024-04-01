@@ -130,11 +130,15 @@
     display: flex;
     justify-content: space-around;
     margin: 20px;
+    flex-wrap: wrap;
 }
 .cn_item_img{
     width: 200px;
 }
 /* thuc te */
+.tit_w{
+    color: #fad7a0;
+}
 .thuc_te{
     background: #0d251b;
     padding: 30px 0;
@@ -163,6 +167,32 @@
     color: #d8ac63;
     font-size: 2.2rem;
 }
+/* tien ich */
+.tien_ich{
+    padding: 30px 0;
+    background: #f9c26f;
+}
+.ti_item{
+    display: flex;
+    flex: 1;
+}
+.li_ti_item{
+    list-style:decimal;
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 10px;
+    line-height: 30px;
+}
+.ti_text{
+    display: flex;
+    align-items: center;
+    margin: 0 30px;
+}
+.ti_map{
+    flex: 1;
+    margin-right: 30px;
+}
+
 .footer{
     background-color: rgb(26, 25, 25);
 }
@@ -313,6 +343,10 @@ input{
     background-color: #f9c26f;
     padding-bottom: 50px;
 }
+.dssp_list{
+    display: flex;
+    flex-wrap: wrap;
+}
 .dssp-item{
     display: flex;
     justify-content: center;
@@ -370,6 +404,20 @@ input{
 .dssp_gia_text{
     font-size: 2rem;
     font-weight: 500;
+}
+/* trai nghiem */
+.trai_nghiem{
+    padding: 30px 0;
+    background: #C38154;
+}
+.c_tn{
+    height: 600px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+.c_cap{
+    font-size: 2.5rem;
+    margin-bottom: 20px;
 }
 /* cuộn */
 .scroll_to_back{

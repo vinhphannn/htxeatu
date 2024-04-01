@@ -379,7 +379,7 @@
     align-items: center;
     height: 350px;
     transition: transform 0.5s ease;
-    background-color: hsl(13, 40%, 47%) ;
+
     /* animation: truot ease-in-out 1s; */
   }
   /* @keyframes truot {

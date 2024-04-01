@@ -122,5 +122,5 @@ document.getElementById('scroll_to_back').addEventListener('click', function() {
 });
 
 // 
-$('.carousel').carousel()
+
 
