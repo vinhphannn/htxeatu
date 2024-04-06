@@ -80,6 +80,7 @@
     color:#eeddc4;
     font-weight: 500;
     margin-bottom: 30px;
+    font-family: 'Times New Roman', Times, serif;
 }
 .header__tl2{
     font-size: 2rem;
@@ -99,6 +100,9 @@
 }
 .tl_item_chu{
     padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 .tl_item_tl1{
     font-size: 1.8rem;
@@ -107,7 +111,7 @@
     display: flex;
     justify-content: center;
     overflow: hidden;
-    max-height: 500px;
+    max-height: 550px;
     padding: 0;
 }
 .tl_item_img{
@@ -174,7 +178,23 @@
 }
 .ti_item{
     display: flex;
-    flex: 1;
+}
+.ti_text,
+.ti_map {
+    width: 50%;
+}
+.ti_text{
+    margin: 0 30px;
+    flex-grow: 1;
+}
+.ti_map{
+    flex-grow: 1;
+    margin-right: 30px;
+}
+.map{
+    border: 5px; 
+    border-radius: 10px; 
+    min-width:400px;
 }
 .li_ti_item{
     list-style:decimal;
@@ -182,15 +202,7 @@
     font-weight: 500;
     margin-bottom: 10px;
     line-height: 30px;
-}
-.ti_text{
-    display: flex;
-    align-items: center;
-    margin: 0 30px;
-}
-.ti_map{
-    flex: 1;
-    margin-right: 30px;
+
 }
 
 .footer{
@@ -346,8 +358,10 @@ input{
 .dssp_list{
     display: flex;
     flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
 }
-.dssp-item{
+.dssp_item{
     display: flex;
     justify-content: center;
 }
@@ -359,12 +373,13 @@ input{
     flex-direction: column;
     justify-content: center; /* căn giữa theo chiều dọc */
     align-items: center; /* căn giữa theo chiều ngang */
-    width: 325px; /* có thể điều chỉnh kích thước của card_sp tùy ý */
+    width: 95%; /* có thể điều chỉnh kích thước của card_sp tùy ý */
     border-radius: 10px;
     background-color: white;
-    margin: 20px auto;
+    margin: 10px;
     box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.344), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     transition: 0.6s all ease;
+    margin-bottom: 40px;
 }
 .card_sp:hover{
     scale: 1.02;
@@ -388,18 +403,24 @@ input{
     font-weight: 500;
 }
 
+.huongvi{
+    display: flex;
+    width: 100%;
+    justify-content:space-around;
+    padding: 5px;
+}
 
 .huongvi_item{
-    display: flex;
-    justify-content: center;
-    flex: 1;
-   
+   flex-grow: 1;
+   margin: 5px;
 }
 .huongvi_text{
     font-size: 1.3rem;
     background-color: rgba(112, 110, 110, 0.1);
     border-radius: 5px;
-    padding: 5px;
+    padding: 7px 2px;
+    text-align: center;
+    text-wrap: nowrap;
 }
 .dssp_gia_text{
     font-size: 2rem;
@@ -554,4 +575,459 @@ input{
     width: 100%;
     height: 50px;
     background-color:#f9c26f;
+}
+@media screen and (max-width: 1200px){
+    .header{
+        height: 650px;
+        background-size: cover;
+    }
+    .header__navbar-item{
+        font-size: 1.9rem;
+        padding: 0;
+        margin: 0 8px;
+    }
+    .header__tl1{
+        font-size: 5rem;
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: 600;
+        margin: 50px;
+    }
+    .tl_item_img{
+        object-fit: cover;
+    }
+    .tl_item_tl1{
+        font-size:  1.7rem; ;
+    }
+    .cn_item_img{
+        width: 180px;
+    }
+    .tt_text{
+        font-size: 2rem;
+    }
+}
+@media screen and (max-width: 992px){
+    .header{
+        height: 550px;
+    } 
+    .header__navbar{
+        height: 60px;
+    }
+    .header__logo-icon{
+        height: 60px;
+        margin-left:30px ;
+    }
+    .header__navbar-item{
+        font-size: 1.3rem;
+        margin: 0 3px;
+    }
+    .header__text{
+        padding-top: 130px;
+    }
+    .header__tl1{
+        font-size: 4.5rem;
+    }
+    .tit{
+        font-size: 2.5rem;
+    }
+    .tl_item_tl2{
+        display: none;
+    }
+    .chung_nhan{
+        padding: 20px 0;
+    }
+   .cn_item_img{
+        width: 145px;
+    }
+    .cn_tit{
+        padding: 0;
+    }
+    .li_ti_item{
+        font-size: 1.5rem;
+    }
+    .footer_mxh_item{
+        padding: 23px 15px;
+    }
+    .footer_mxh_item_link{
+        font-size: 1.7rem;
+    }
+    .selection{
+        height: 200px;
+    }
+    .selection_tl{
+        font-size: 2rem;
+    }
+    .selection_tl_item{
+        margin: 17px;
+    }
+}
+@media screen and (max-width: 769px){
+    .tit{
+        font-size: 1.8rem;
+    }
+    .header{
+        height: 400px;
+    }
+    .header__navbar{
+        height: 60px;
+        margin: 0 auto;
+        top: 20px;
+        right: 20px;
+        left: 20px;
+        border-radius: 30px;
+        padding: 0 20px;
+    }
+    .header__navbar__content{
+        display: flex;
+        justify-content: space-between;
+        
+    
+    }
+    .header_bard{
+        display: none;
+    }
+
+    .header__navbar-list{
+        list-style: none;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        margin: 0;
+
+    }
+    .header__navbar-item{
+        padding: 14px 3px;
+        font-size: 1.3rem;
+        color: var(--white-color);
+        margin: 0;
+        border:4px solid rgba(255, 0, 0, 0) ;
+        border-radius: 5px;
+    }
+    .header__navbar-item:hover{
+        color:black;
+        cursor: pointer;
+    }
+    .header__logo-icon{
+        height: 40px;
+        margin: 10px;
+    }
+    .header_bard{
+        font-size: 33px;
+        color: rgba(255, 255, 255, 0.411);
+        margin: 5px 10px;
+    }
+    .header__text{
+        padding-top: 150px;
+    }
+    .header__tl1{
+        font-size: 3.5rem;
+        margin: 0 30px;
+    }
+    .header__tl2{
+        font-size: 1.5rem;
+    }
+
+    .addgh{
+        padding: 7px;
+    }
+    .addgh_text{
+        font-size: 1rem;
+    }
+    .dssp{
+        padding: 40px 0;
+    }
+    .tit_item{
+        padding: 0;
+        margin: 0;
+    }
+    .dssp_list{
+        padding: 7.5px;
+    }
+    .dssp_item{
+        padding: 0;
+        margin: 20px 0;
+    }
+    .dssp_ten_text{
+        margin: 10px;
+        font-size: 1.5rem;
+        font-weight: 500;
+    }
+    .card_sp{
+        margin: 5px;
+    }
+    .dssp_img{
+        width: 90%;
+    }
+    .huongvi_text{
+        margin: 0;
+        font-size: 1rem;
+    }
+    .ti_item{
+        display: flex;
+    }
+    .ti_list{
+        width: 90%;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+    .map{
+        padding: 0 20px;
+        min-height: 400px;
+    }
+    .ti_item{
+        flex-direction: column;
+        overflow-x: hidden;
+    }
+    .ti_text,
+    .ti_map {
+        width: 100%;
+    }
+    .footer_mxh{
+       
+    }
+    .footer_mxh_item{
+        padding: 20px 13px;
+    }
+    .footer_mxh_item_link{
+        font-size: 1.5rem;
+    }
+    .chung_nhan{
+        padding-top: 0;
+    }
+    .cn_item_img{
+        width: 130px;
+    }
+    .tt_text{
+        font-size: 1.7rem;
+    }
+    .c_tn{
+        height: 400px;
+    }
+    .selection{
+        height: 170px;
+    }
+    .selection_tl{
+        font-size: 2rem;
+    }
+    .selection_tl_item{
+        margin: 10px;
+    }
+
+}
+@media screen and (max-width: 576px){
+    .header{
+        width: 100%;
+        height: 300px;
+        background-size: cover;
+        background-position: center;
+      
+    }
+
+    .header__navbar{
+        height: 50px;
+        margin: 0 auto;
+        top: 15px;
+        right: 20px;
+        left: 20px;
+        border-radius: 20px;
+        padding: 0 20px;
+    }
+    .header__navbar__content{
+        display: flex;
+        justify-content: space-between;
+        
+    
+    }
+    .header_bard{
+        display: block;
+    }
+    .header_bard:hover{
+        .header_bard_menu{
+            display: block;
+        }
+    }
+    .bard_list{
+        padding:0 30px;
+        margin: 0;
+    }
+ 
+    .header_bard_menu{
+        position: fixed;
+        top: 60px;
+        right: 4px;
+        left: 4px;
+        border-radius: 20px;
+        background: rgba(0, 0, 0, 0.709);
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+        display: none;
+        animation: hienlen ease-out .4s;
+    }
+
+    .bard_item1,.bard_item{
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        list-style: none;
+        border-bottom: solid 2px #8c4e3b;
+        padding-top: 0;
+    }
+    .bard_item1{
+        border-bottom:none;
+    }
+    .bar_item_link{
+        font-size: 1.5rem;
+        text-decoration: none;
+        color: #ffffffbd;
+        font-weight: 500;
+    }
+
+    /* animation */
+    @keyframes hienlen {
+        from{
+            opacity: 0;
+            transform: translateY(-100%);
+        }
+        to{
+            opacity: 1;
+            transform: translatey(0);
+        }
+        
+    }
+    
+    .header__menu{
+        display: none;
+    }
+
+    .header__navbar-list{
+        list-style: none;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        margin: 0;
+
+    }
+    .header__navbar-item{
+        padding: 5px;
+        font-size: 0.7rem;
+        color: var(--white-color);
+        margin: 10px;
+        border:4px solid rgba(255, 0, 0, 0) ;
+        border-radius: 5px;
+    }
+    .header__navbar-item:hover{
+        color:black;
+        cursor: pointer;
+    }
+    .header__logo-icon{
+        height: 40px;
+        margin: 5px;
+    }
+    .header_bard{
+        font-size: 33px;
+        color: rgba(255, 255, 255, 0.411);
+        margin: 0 10px;
+    }
+    .header__text{
+        padding: 100px 20px 0 20px;
+    }
+    .header__tl1{
+        font-size: 3rem;
+        margin: 0;
+    }
+    .header__tl2{
+        font-size: 10px;
+    }
+    .tit{
+        padding: 0;
+    }
+    .thanh_lap{
+        padding-bottom: 0;
+    }
+    .tl_inner{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .tl_item_chu{
+        text-align: justify;
+        align-items: center;
+        padding: 20px;
+    }
+    .tl_item_tl1{
+        font-size: 1.3rem;
+        line-height: 30px;
+    }
+    .order2{
+        order: 1;
+    }
+    .order1{
+        order: 2;
+    }
+    .cn_inner{
+        flex-wrap: nowrap;
+        overflow-x:scroll;
+    }
+
+    .tt_inner{
+        flex-direction: column;
+    }
+    .tt_item{
+        text-align: justify;
+    }
+    .tt_text{
+        font-size: 1.3rem;
+        line-height: 30px;
+        order: 3;
+    }
+    .tt_img{
+        order: 4;
+    }
+    .c_tn{
+        height: 300px;
+    }
+    .ti_text{
+        margin: 10px 0;
+    }
+    .li_ti_item{
+        font-size: 1.4rem;
+    }
+    .map{
+        min-width: 320px;
+        height: 100px;
+        border-radius: 5px;
+    }
+    .selection{
+        background-size: cover;
+    }
+    .footer_mxh-mobile{
+        display: flex;
+        justify-content: space-around;
+        border-bottom: 1px solid white;
+    }
+    .footer_mxh_item_link{
+        font-size: 2rem;
+    }
+    .footer_mxh{
+        display: none;
+    }
+    .card_sp{
+        overflow: hidden;
+    }
+    .dssp_ten_text{
+        font-size: 13px;
+        margin-bottom: 0;
+    }
+    .huongvi_item{
+        margin: 3px;
+    }
+    .huongvi_text{
+        font-size: 8px;
+    }
+    .dssp_gia_text{
+        font-size: 1.5rem;
+    }
+    .addgh{
+        padding:5px ;
+    }
 }

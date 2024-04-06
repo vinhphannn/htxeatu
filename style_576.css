@@ -405,23 +405,23 @@
     .event{
         height: 700px;
         align-items: center;
+        display: flex;
+        justify-content: center;
     }
-    .carousel{
-        height: 600px;
+    .event_item{ 
+        all: unset;
     }
     .event_item{
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: center;
-        height: 600px;
-        transition: transform 0.5s ease;
-        background-color: hsl(13, 40%, 47%) ;
+
     }
 
     .event_hinh{
         padding: 0;
-        height: 310px;
+        width: 90%;
+        margin: 0 auto;
         
 
     }

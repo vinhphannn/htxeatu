@@ -359,7 +359,7 @@
 /* su kien  */
   .event{
     background-color: hsl(13, 40%, 47%);
-    height: 500px;
+    height: 550px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -379,35 +379,18 @@
     align-items: center;
     height: 350px;
     transition: transform 0.5s ease;
-
-    /* animation: truot ease-in-out 1s; */
   }
-  /* @keyframes truot {
-    0%{
-        opacity: 0;
-        transform: translateX(-100%);
-    }
-    50%{
-        opacity: 1;
-        transform: translateX(0);
-    }
-    100%{
-        opacity: 0;
-        transform: translateX(100%);
-    }
-  } */
   .event_text{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     align-items: center;
     padding: 20px 40px;
+    flex-grow: 1;
 
     
   }
   .event_text_date{
     font-size: 1.5rem;
     font-weight: 500;
+    text-align: center;
   }
   .event_text_content{
     font-size: 2.5rem;
@@ -415,18 +398,20 @@
     text-align: center;
   }
   .event_hinh{
-    display:flex;
-    height: 100%;
-    justify-content: center;
     overflow: hidden;
     padding: 0 40px 0 0;
+    flex-grow: 1;
 
+  }
+  .button_xemthem{
+    text-align: center;
   }
   .event_img{
     width: 100%;
-    display: inline;
+    display: flex;
     /* giu ty le khung hinh */
     object-fit: cover;
+
   }
   .carousel-control-prev{
     justify-content: flex-start;
