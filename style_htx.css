@@ -91,7 +91,7 @@
 }
 /* thanh lap */
 .thanh_lap{
-    background: #d8ac63;
+    background:#f9e0bb;
     padding: 30px 0;
 }
 .tl_item{
@@ -166,6 +166,7 @@
     width: 100%;
     height: auto;
     object-fit: cover;
+    border-radius: 10px;
 }
 .tt_text{
     color: #d8ac63;
@@ -178,6 +179,32 @@
 }
 .ti_item{
     display: flex;
+}
+.ti_btn_book{
+    display: flex;
+    justify-content: center;
+}
+.li_ti_item-book{
+    list-style: none;
+}
+
+.book{
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 500;
+    border: 1px solid #3e221b;
+    border-radius: 10px;
+    padding: 5px;
+    width: 130px;
+    margin: 15px;
+    cursor: pointer;
+    transition: 0.5s;
+    background: #6b240c89;
+
+}
+.book:hover{
+    scale:1.05;
+    
 }
 .ti_text,
 .ti_map {
@@ -434,7 +461,7 @@ input{
 .c_tn{
     height: 600px;
     object-fit: cover;
-    border-radius: 5px;
+    border-radius: 10px;
 }
 .c_cap{
     font-size: 2.5rem;
@@ -591,6 +618,9 @@ input{
         font-family: 'Times New Roman', Times, serif;
         font-weight: 600;
         margin: 50px;
+    }
+    .tl_item{
+        width: 100%;
     }
     .tl_item_img{
         object-fit: cover;
@@ -755,12 +785,23 @@ input{
         margin: 5px;
     }
     .dssp_img{
-        width: 90%;
+        width: 80%;
+    }
+    .huongvi{
+        padding: 0;
+        margin-bottom: 5px;
+    }
+    .huongvi_item{
+        margin: 3px;
     }
     .huongvi_text{
         margin: 0;
         font-size: 1rem;
     }
+    .dssp_gia_text{
+        font-size: 1.8rem;
+    }
+
     .ti_item{
         display: flex;
     }
@@ -979,6 +1020,7 @@ input{
         font-size: 1.3rem;
         line-height: 30px;
         order: 3;
+        margin: 10px 0;
     }
     .tt_img{
         order: 4;
@@ -1030,4 +1072,28 @@ input{
     .addgh{
         padding:5px ;
     }
+    .footer_tt{
+        margin: 0;
+        padding: 0;
+    }
+    .footer__info{
+        padding:0 20px;
+    }
+    .footer_info_item{
+        margin: 20px;
+        border: none;
+        text-align: center;
+        font-size: 1.7rem;
+    }
+    .footer_info_list{
+        border-bottom: 1px solid wheat;
+        padding: 0;
+        padding-bottom: 20px;
+        
+    }
+    .footer_info_link{
+        padding: 10px;
+    }
+
+
 }

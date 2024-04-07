@@ -19,8 +19,7 @@
     margin: 0 auto;
     /* background-image: linear-gradient(0, #C38154,#884A39); */
     background: rgba(111, 32, 32, 0.71);
-    position: sticky;
-    position: -webkit-sticky;
+    position: fixed;
     top: 30px;
     right: 40px;
     left: 40px;
@@ -71,7 +70,7 @@
 .header__text{
     margin: auto;
     text-align: center;
-    padding-top: 80px;
+    padding-top: 150px;
 
 }
 .header__tl1{
@@ -244,5 +243,325 @@
     justify-content: center;
 }
 @media screen and (max-width: 1200px) {
+    .header{
+        height: 750px;
+        background-size: cover;
+    }
+    .header__text{
+        padding-top: 140px;
+    }
+    .header__navbar-item{
+        font-size: 1.8rem;
+        padding: 0;
+        margin: 0 8px;
+    }
+
+
+    .lh_container{
+        padding: 0 20px;
+    }
+    .lh_info_item{
+        font-size: 1.7rem;
+    }
+    .label_ip{
+        font-size: 1.5rem;
+    }
     
 }
+@media screen and (max-width: 992px) {
+    .header__navbar{
+        height: 60px;
+    }
+    .header__navbar__content{
+        display: flex;
+        justify-content: space-between;
+       
+    }
+    .header__menu{
+        display: flex;
+        align-items: center;
+    }
+    .header__navbar-list{
+        margin-right: 20px;
+    
+    }
+    .header__navbar-item{
+        padding: 0;
+        font-size: 1.4rem;
+        margin: 5px;
+    }
+
+    .header__logo-icon{
+        height: 60px;
+        margin-left:30px ;
+    }
+
+    
+
+    .lh_info{
+        padding-right: 20px;
+    }
+
+    .lh_info_tit{
+        font-size: 4rem;
+    }
+
+    .lh_info_item{
+        font-weight: 500;
+    }
+    .form_ip_item{
+        width: 70%;
+        height: 30px;
+    }
+    .footer_mxh_item_link{
+        font-size: 1.5rem;
+    }
+
+
+}
+@media screen and (max-width: 768px) {
+    .header{
+        height: 650px;
+    }
+    .header__navbar{
+        height: 60px;
+ 
+        right: 5px;
+        left: 5px;
+    }
+    .header__navbar__content{
+        display: flex;
+        justify-content: space-between;
+       
+    }
+    .header__menu{
+        display: flex;
+        align-items: center;
+    }
+    .header__navbar-list{
+        margin: 0;
+        margin-right: 20px;
+    
+    }
+    .header__navbar-item{
+        padding: 0;
+        font-size: 1.2rem;
+        margin: 3px;
+    }
+
+    .header__logo-icon{
+        height: 50px;
+        margin: 5px;
+        margin-left:30px ;
+    }
+    .header__tl1{
+        font-size: 2.5rem;
+    }
+    .header_logo_img{
+        width: 70px;
+    }
+
+    .footer_mxh{
+        justify-content: space-around;
+    }
+    .footer_mxh_item_link{
+        font-size: 1.3rem;
+    }
+    .footer_mxh_item{
+        padding: 15px 0;
+    }
+    .footer_tt{
+        margin: 0;
+        padding: 0 30px;
+    }
+    .footer_info_item{
+        text-align: center;
+        border: none;
+        margin-bottom: 10px;
+    }
+    .footer_info_list{
+        padding: 0;
+        border-bottom: 1px solid wheat;
+    }
+
+
+    .lh_info_tit{
+        font-size: 3rem;
+    }
+    .lh_info_item{
+        font-size: 1.4rem;
+    }
+    .label_ip{
+        font-size: 1.2rem;
+    }
+    .btn_send{
+        padding: 5px;
+    }
+}
+@media screen and (max-width:576px) {
+    .header{
+        height: 900px;
+    }
+    .header__navbar{
+        height: 50px;
+        top: 15px;
+        border-radius: 20px;
+
+    }
+    .header__navbar__content{
+        display: flex;
+        justify-content: space-between;
+       
+    }
+    .header__menu{
+        display: none;
+    }
+    .header_bard{
+        display: block;
+        font-size: 33px;
+        color: rgba(255, 255, 255, 0.411);
+        margin: 0 20px;
+    }
+
+    .header_bard:hover{
+        .header_bard_menu{
+            display: block;
+        }
+    }
+    .bard_list{
+        padding:0 30px;
+        margin: 0;
+    }
+ 
+    .header_bard_menu{
+        position: fixed;
+        top: 60px;
+        right: 4px;
+        left: 4px;
+        border-radius: 20px;
+        background: rgba(0, 0, 0, 0.709);
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+        display: none;
+        animation: hienlen ease-out .4s;
+    }
+
+    .bard_item1,.bard_item{
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        list-style: none;
+        border-bottom: solid 2px #8c4e3b;
+        padding-top: 0;
+    }
+    .bard_item1{
+        border-bottom:none;
+    }
+    .bar_item_link{
+        font-size: 1.5rem;
+        text-decoration: none;
+        color: #ffffffbd;
+        font-weight: 500;
+    }
+    .header__text{
+        padding-top: 100px;
+    }
+    .lh_container{
+        flex-direction: column;
+    }
+    .header_logo_img{
+        width: 50px;
+    }
+
+    .header_logo_tit::after{
+        content: "";
+        display: block;
+        position: absolute;
+        width: 70px;
+        height: 3px;
+        border: solid 1px black;
+        top: 20px;
+        left: -100px;
+        border-radius: 5px;
+    
+    }
+    .header_logo_tit::before{
+        content: "";
+        display: block;
+        position: absolute;
+        width: 70px;
+        height: 3px;
+        border: solid 1px black;
+        top: 20px;
+        left: 80px;
+        border-radius: 5px;
+    }
+
+    .lh_info{
+        margin-bottom: 30px;
+    }
+
+    .ip_item{
+        display: flex;
+        flex-direction: column;
+    }
+    .form_ip_item{
+        width: 100%;
+    }
+    .footer_mxh{
+        justify-content: space-around;
+    }
+    .footer_mxh_item_link{
+        font-size: 1.3rem;
+    }
+    .footer_mxh_item{
+        padding: 15px 0;
+    }
+    .footer_tt{
+        margin: 0;
+        padding: 0 30px;
+    }
+    .footer_info_item{
+        text-align: center;
+        border: none;
+        margin-bottom: 10px;
+    }
+    .footer_info_list{
+        padding: 0;
+        border-bottom: 1px solid wheat;
+    }
+    .tit_item{
+        font-size: 1.8rem;
+    }
+    .dv_tit{
+        width: 100%;
+        height: 1px;
+        margin-bottom: 60px;
+    }
+    .selection{
+        height: 200px;
+    }
+    .selection_tl{
+        font-size: 2rem;
+    }
+
+    .footer_mxh{
+        display: none;
+    }
+    .footer_mxh-mobile{
+        display: flex;
+        justify-content: space-around;
+        border-bottom: 1px solid wheat;
+    }
+    .footer_mxh_item_link{
+        font-size: 2rem;
+    }
+
+
+
+
+}
+
+
+

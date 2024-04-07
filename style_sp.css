@@ -69,6 +69,14 @@
     margin-left:40px ;
 
 }
+.header__navbar-its{
+    transition: 0.5s;
+}
+
+.header__navbar-list:hover>.header__navbar-its:not(:hover){
+    filter: blur(1.5px);
+    transform: scale(0.9, 0.9);
+}
 .header__text{
     margin: auto;
     text-align: center;
@@ -185,6 +193,7 @@
     margin: 0 15px;
     text-align: center;
     cursor: pointer;
+    transition: .5s;
 }
 .loc_item.loc_item:hover{
     border-color: rgba(0, 0, 0, 0.325);
@@ -204,6 +213,14 @@
     flex-grow: 10;
   
 }
+.loc_list .loc_item:hover{
+    transform: scale(1,1,1.1);
+}
+.loc_list:hover>.loc_item:not(:hover){
+    filter: blur(2px);
+    transform: scale(0.9, 0.9);
+}
+
 
 .search_input {
     display: none;
@@ -428,4 +445,726 @@ input{
     width: 100%;
     height: 50px;
     background-color:#f9c26f;
+}
+@media screen and (max-width: 1200px){
+    .header{
+        height: 600px;
+        background-size: cover;
+    }
+    .header_bard{
+        display: none;
+    }
+    .header__navbar{
+        max-width: 1200px;
+        height: 80px;
+        width: 90%;
+        border-radius: 30px;
+    }
+    .header__navbar-list{
+        align-items: center;
+        justify-content: flex-end;
+        margin:0;
+        padding: 0;
+        margin-right: 30px;
+    
+    }
+    .header__navbar-item{
+        padding: 0;
+        font-size: 1.8rem;
+    }
+
+    .header__text{
+        padding-top: 170px;
+        font-family: 'Times New Roman', Times, serif;
+    }
+    .header__tl1{
+        font-weight: 700;
+        font-size: 5.5rem;
+        color:#ede2d0;
+        margin: 0;
+    }
+    .header__tl2{
+        font-size: 3rem;
+        color:#ede2d0;
+        font-weight: 300;
+    }
+    /* footer */
+    .footer{
+        background-color: rgb(26, 25, 25);
+    }
+    .footer_mxh{
+        display: flex;
+        justify-content: center;
+        border-bottom: 1px solid white;
+    }
+    .footer_mxh-mobile{
+        display: none;
+    }
+    .footer_mxh_item{
+        padding: 20px;
+    
+    }
+    .footer_mxh_item_link{
+        font-size: 1.8rem;
+        text-decoration: none;
+        color: white;
+        font-weight: 400;
+    }
+    .footer_mxh_item_link:hover{
+        color: rgb(223, 52, 52);
+        transition: 2s all ease;
+    }
+    
+    .footer_info_item{
+        margin: 30px;
+        color: white;
+        font-size: 1.5rem;
+        border-left: 4px solid rgba(255, 255, 255, 0.59);
+        padding: 5px 10px;
+    }
+    .footer_info_link{
+        font-size: 1.5rem;
+        text-decoration: none;
+        color: white;
+        font-weight: 400;
+        list-style: none;
+        padding: 15px;
+        /* border-bottom: 0.5px solid rgba(255, 255, 255, 0.59); */
+    
+    }
+    .footer_info_link1{
+        border-bottom:none;
+    }
+    .footer_tt{
+        border-bottom: 1px solid white;
+    }
+    .form_container{
+        margin: 30px;
+    }
+    .form_name{
+        color: white;
+        font-size: 1.5rem;
+    }
+    .footer_nguon{
+        display: flex;
+        justify-content: center; /* căn giữa theo chiều ngang */
+    }
+    .footer_nguon_link{
+        font-size: 1rem;
+        color: white;
+        font-weight: 400;
+        padding: 15px;
+        justify-content: center;
+    }
+
+    /* loc sp */
+
+    .loc_list{
+        margin: 10px 0;
+    }
+    .loc_item{
+        font-size: 1.7rem;
+        padding: 0;
+        margin: 0 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .loc_item.loc_item:hover{
+        border-color: rgba(0, 0, 0, 0.325);
+    }
+
+    
+    /*  san pham */
+    .tit_item{
+        font-size: 2.7rem;
+        margin: 15px;
+    }
+
+    .dssp_list{
+        margin: 0;
+        padding: 0;
+    }
+    .dssp_img{
+        width: 80%;
+    }
+    .card_sp {
+       
+        width: 90%; /* có thể điều chỉnh kích thước của card_sp tùy ý */
+        margin: 20px auto;
+    }
+    
+    .huongvi{
+        margin: 0;
+        padding: 0;
+    }
+   
+      /* selection */
+      .selection{
+        background-size: cover;
+    }
+    .selection_tl{
+        font-size: 2.5rem;
+        font-weight: 600;
+        color:#F9E0BB;
+    
+    }
+    .selection_tl_item{
+        margin: 20px;
+    }
+    .selection_tl1{
+        font-size: 1.7rem ;
+        text-decoration: none;
+        color: #F9E0BB;
+    }
+    .trong{
+        width: 100%;
+        height: 50px;
+        background-color:#f9c26f;
+    }
+}
+@media screen and (max-width: 992px){
+
+
+    .header{
+        height: 450px;
+        background-size: cover;
+    }
+    .header__navbar{
+        height: 60px;
+    }
+    .header__navbar__content{
+        display: flex;
+        justify-content: space-between;
+       
+    }
+    .header__menu{
+        display: flex;
+        align-items: center;
+    }
+    .header__navbar-list{
+        margin-right: 20px;
+    
+    }
+    .header__navbar-item{
+        padding: 0;
+        font-size: 1.4rem;
+        margin: 5px;
+    }
+
+    .header__logo-icon{
+        height: 60px;
+        margin-left:30px ;
+    }
+
+    .header__text{
+        margin: auto;
+        text-align: center;
+        padding-top: 120px;
+    
+    }
+    .header__tl1{
+        font-size: 4rem;
+    }
+    .header__tl2{
+        font-size: 2.5rem;
+    }
+   
+    /* loc sp */
+    
+    .loc_list{
+        margin: 10px 0;
+    }
+    .loc_item{
+        font-size: 1.5rem;
+        padding: 0;
+        margin: 0 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .loc_seach:hover{
+        .search_input{
+            display: block;
+        }
+        flex-grow: 150;
+      
+    }
+    
+    
+
+    .trong{
+        width: 100%;
+        height: 50px;
+        background-color:#f9c26f;
+    }
+    .card_sp{
+        width: 95%;
+    }
+    .tit{
+        padding: 0;
+    }
+    .addgh{
+        padding: 8px;
+    }
+    .addgh_text{
+        font-size: 1rem;
+    }
+    .dssp_ten_text{
+        margin: 12px;
+    }
+    .huongvi_item{
+        display: flex;
+        padding:5px 0;
+        flex: 1;
+        background-color: rgba(112, 110, 110, 0.1);
+        margin: 4px;
+        border-radius: 5px;
+    }
+    .huongvi_text{
+        margin: 0;
+        padding: 0;
+        font-size: 10px;
+        background: none;
+        text-align: center;
+    }
+    /* footer */
+    .footer_mxh_item_link{
+        font-size: 1.5rem;
+    }
+    
+}
+@media screen and (max-width: 768px) {
+    .header{
+        height: 400px;
+        background-size: cover;
+    }
+    .header__navbar{
+        height: 60px;
+ 
+        right: 5px;
+        left: 5px;
+    }
+    .header__navbar__content{
+        display: flex;
+        justify-content: space-between;
+       
+    }
+    .header__menu{
+        display: flex;
+        align-items: center;
+    }
+    .header__navbar-list{
+        margin-right: 20px;
+    
+    }
+    .header__navbar-item{
+        padding: 0;
+        font-size: 1.2rem;
+        margin: 3px;
+    }
+
+    .header__logo-icon{
+        height: 50px;
+        margin: 5px;
+        margin-left:30px ;
+    }
+
+    .header__text{
+        margin: auto;
+        text-align: center;
+        padding-top: 120px;
+    
+    }
+    .header__tl1{
+        font-size: 3.5rem;
+    }
+    .header__tl2{
+        font-size: 1.5rem;
+    }
+   
+    /* loc sp */
+    
+    .loc_list{
+        margin: 7px 0;
+    }
+    .loc_item{
+        font-size: 1.5rem;
+        padding: 0;
+        margin: 0 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 35px;
+        overflow:inherit;
+        transition: 0.5s;
+        text-wrap: nowrap;
+        overflow: hidden;
+    }
+
+    .loc_seach:hover {
+        flex-grow: 150;
+    }
+
+    .loc_item:hover{
+        transform: scale(1,1,2);
+    }
+    .loc_list:hover>.loc_item:not(:hover){
+        filter: blur(1px);
+        transform: scale(0.9, 0.9);
+        width: 80px;
+    }
+
+
+
+.div .divs:hover{
+    transform: scale(1,1,1.1);
+}
+.div:hover>.divs:not(:hover){
+    filter: blur(10px);
+    transform: scale(0.9, 0.9);
+}
+    
+    
+    
+
+    .trong{
+        width: 100%;
+        height: 50px;
+        background-color:#f9c26f;
+    }
+    .tit{
+        padding: 0;
+    }
+    .addgh{
+        padding: 5px;
+    }
+    .addgh_text{
+        font-size: .9rem;
+    }
+    .dssp_ten_text{
+        margin: 10px;
+        font-size: 1.3rem;
+    }
+    .huongvi_item{
+        display: flex;
+        padding:5px 0;
+        flex: 1;
+        background-color: rgba(112, 110, 110, 0.1);
+        margin: 4px;
+        border-radius: 5px;
+    }
+    .huongvi_text{
+        margin: 0;
+        padding: 0;
+        font-size: 8px;
+        background: none;
+        text-align: center;
+    }
+    .dssp_gia_text{
+        font-size: 1.5rem;
+        margin: 7px;
+    }
+    /* footer */
+    .footer_mxh{
+        justify-content: space-around;
+    }
+    .footer_mxh_item_link{
+        font-size: 1.3rem;
+    }
+    .footer_mxh_item{
+        padding: 15px 0;
+    }
+    .footer_tt{
+        margin: 0;
+        padding: 0 30px;
+    }
+    .footer_info_item{
+        text-align: center;
+        border: none;
+        margin-bottom: 10px;
+    }
+    .footer_info_list{
+        padding: 0;
+        border-bottom: 1px solid wheat;
+    }
+    .tit_item{
+        font-size: 1.8rem;
+    }
+    .dv_tit{
+        width: 100%;
+        height: 1px;
+        margin-bottom: 60px;
+    }
+    .selection{
+        height: 200px;
+    }
+    .selection_tl{
+        font-size: 2rem;
+    }
+
+    
+    
+}
+@media screen and (max-width:576px) {
+
+    .header{
+        height: 300px;
+        background-size: cover;
+    }
+    .header__navbar{
+        height: 50px;
+        top: 15px;
+        border-radius: 20px;
+
+    }
+    .header__navbar__content{
+        display: flex;
+        justify-content: space-between;
+       
+    }
+    .header__menu{
+        display: none;
+    }
+    .header_bard{
+        display: block;
+        font-size: 33px;
+        color: rgba(255, 255, 255, 0.411);
+        margin: 0 20px;
+    }
+
+    .header_bard:hover{
+        .header_bard_menu{
+            display: block;
+        }
+    }
+    .bard_list{
+        padding:0 30px;
+        margin: 0;
+    }
+ 
+    .header_bard_menu{
+        position: fixed;
+        top: 60px;
+        right: 4px;
+        left: 4px;
+        border-radius: 20px;
+        background: rgba(0, 0, 0, 0.709);
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+        display: none;
+        animation: hienlen ease-out .4s;
+    }
+
+    .bard_item1,.bard_item{
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        list-style: none;
+        border-bottom: solid 2px #8c4e3b;
+        padding-top: 0;
+    }
+    .bard_item1{
+        border-bottom:none;
+    }
+    .bar_item_link{
+        font-size: 1.5rem;
+        text-decoration: none;
+        color: #ffffffbd;
+        font-weight: 500;
+    }
+
+    /* animation */
+    @keyframes hienlen {
+        from{
+            opacity: 0;
+            transform: translateY(-100%);
+        }
+        to{
+            opacity: 1;
+            transform: translatey(0);
+        }
+        
+    }
+    
+    .header__navbar-list{
+        margin-right: 20px;
+    
+    }
+    .header__navbar-item{
+        padding: 0;
+        font-size: 1.2rem;
+        margin: 3px;
+    }
+
+    .header__logo-icon{
+        height: 40px;
+        margin: 5px;
+        margin-left:20px ;
+    }
+
+    .header__text{
+        margin: auto;
+        text-align: center;
+        padding-top: 80px;
+    
+    }
+    .header__tl1{
+        font-size: 3rem;
+    }
+    .header__tl2{
+        font-size: 1.2rem;
+    }
+   
+    /* loc sp */
+
+
+    
+    .loc_container{
+        display: none;
+    }
+
+
+    /* .div .divs:hover{
+        transform: scale(1,1,1.1);
+    }
+    .div:hover>.divs:not(:hover){
+        filter: blur(10px);
+        transform: scale(0.9, 0.9);
+    } */
+    .loc_sp{
+        top: -50px;
+    }
+
+
+
+
+    .loc_list-mb {
+        display: flex;
+        flex-wrap: wrap; /* Cho phép các phần tử chuyển dòng khi không đủ không gian */
+        padding: 0;
+    }
+    
+    .loc_item-mb {
+        width: calc(50% - 14px); /* Đặt chiều rộng cho mỗi phần tử là 50% cộng với margin */
+        margin: 7px; /* Margin giữa các phần tử */
+        list-style: none;
+        border: solid 2px black;
+        border-radius:20px ;
+        font-size: 1.5rem;
+        height: 35px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+
+    }
+   .loc_seach-mb{
+        order: -1;
+        width: 100%;
+        display: flex;
+
+    }
+    .search_input-mb{
+        width: 90%;
+    }
+    .o_ip-mb{
+        width: 100%;
+    }
+    .search_input{
+        display: block;
+    }
+    
+
+    .trong{
+        width: 100%;
+        height: 50px;
+        background-color:#f9c26f;
+    }
+    .tit{
+        padding: 0;
+    }
+    .addgh{
+        padding: 5px;
+    }
+    .addgh_text{
+        font-size: .9rem;
+    }
+    .dssp_ten_text{
+        margin: 10px;
+        font-size: 1.3rem;
+    }
+    .huongvi_item{
+        display: flex;
+        padding:5px 0;
+        flex: 1;
+        background-color: rgba(112, 110, 110, 0.1);
+        margin: 4px;
+        border-radius: 5px;
+    }
+    .huongvi_text{
+        margin: 0;
+        padding: 0;
+        font-size: 8px;
+        background: none;
+        text-align: center;
+    }
+    .dssp_gia_text{
+        font-size: 1.5rem;
+        margin: 7px;
+    }
+    /* footer */
+    .footer_mxh{
+        justify-content: space-around;
+    }
+    .footer_mxh_item_link{
+        font-size: 1.3rem;
+    }
+    .footer_mxh_item{
+        padding: 15px 0;
+    }
+    .footer_tt{
+        margin: 0;
+        padding: 0 30px;
+    }
+    .footer_info_item{
+        text-align: center;
+        border: none;
+        margin-bottom: 10px;
+    }
+    .footer_info_list{
+        padding: 0;
+        border-bottom: 1px solid wheat;
+    }
+    .tit_item{
+        font-size: 1.8rem;
+    }
+    .dv_tit{
+        width: 100%;
+        height: 1px;
+        margin-bottom: 60px;
+    }
+    .selection{
+        height: 200px;
+    }
+    .selection_tl{
+        font-size: 2rem;
+    }
+
+    .footer_mxh{
+        display: none;
+    }
+    .footer_mxh-mobile{
+        display: flex;
+        justify-content: space-around;
+        border-bottom: 1px solid wheat;
+    }
+    .footer_mxh_item_link{
+        font-size: 2rem;
+    }
+
+
+    
 }
