@@ -92,17 +92,6 @@ function getCurrentTime() {
 
 
 // scroll top
-// JavaScript to scroll to top with smooth animation
-function scrollToTop() {
-  var scrollStep = -window.scrollY / (500 / 15); // Tốc độ cuộn, 1000 là thời gian cuộn (ms)
-  var scrollInterval = setInterval(function(){
-      if (window.scrollY != 0) {
-          window.scrollBy(0, scrollStep);
-      } else {
-          clearInterval(scrollInterval);
-      }
-  },15);
-}
 
 // JavaScript to show/hide scroll_to_back button based on scroll position
 window.addEventListener('scroll', function() {
@@ -116,11 +105,16 @@ window.addEventListener('scroll', function() {
   }
 });
 
-// Add click event listener to the scroll_to_back button
-document.getElementById('scroll_to_back').addEventListener('click', function() {
-  scrollToTop();
-});
 
-// 
+
+
+function scrollToElement(elementId) {
+var element = document.getElementById(elementId);
+if (element) {
+element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+}
+}
+
+
 
 

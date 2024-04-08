@@ -19,7 +19,7 @@
 <body>
     
     <div class="app">
-       <header class="header">
+       <header id="top" class="header">
             <nav class=" grid header__content">
                 <!-- navbar -->
                 <div data-aos="fade-down" data-aos-duration="1200" data-aos-easing="ease" data-aos-delay="800" class="header__navbar">
@@ -781,7 +781,7 @@
 </div>
         <div class="selection">
             <div class="container">
-                <div data-aos="fade-up" data-aos-duration="1500" data-aos-delay="0" class="selection_tl">SẢN PHẨM & DỊCH VỤ</div>
+                <div data-aos="fade-up" data-aos-duration="1500" data-aos-delay="0" class="selection_tl">HƯỚNG DẪN VÀ TƯ VẤN </div>
                 <div class="selection_tl_list">
                     <div data-aos="fade-up" data-aos-delay="200" data-aos-duration="1500" class="selection_tl_item">
                         <a href="" class="selection_tl1">Thỏa thuận mua hàng</a>
@@ -790,7 +790,7 @@
                         <a href="" class="selection_tl1">Hướng dẫn mua hàng</a>
                     </div>
                     <div data-aos="fade-up" data-aos-delay="600" data-aos-duration="1500" class="selection_tl_item">
-                        <a href="" class="selection_tl1">Hướng dẫn mua hàng</a>
+                        <a href="" class="selection_tl1">Hỗ trợ nông dân</a>
                     </div>
 
                 </div>
@@ -893,7 +893,7 @@
        </div>
       
       <!-- scroll -->
-      <div id="scroll_to_back" class="scroll_to_back">
+      <div id="scroll_to_back" onclick="scrollToElement('top')" class="scroll_to_back">
         <i class="back_icon fa-solid fa-backward-step fa-rotate-90"></i>
    </div>
 
@@ -920,15 +920,6 @@
     </script>
     <!-- thư viện bootstrap -->
     <script src="bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
-    <script>
-        function scrollToElement(elementId) {
-    var element = document.getElementById(elementId);
-    if (element) {
-        element.scrollIntoView({ behavior: 'smooth', block: 'start' });
-    }
-}
-
-    </script>
     
     
 </body>
