@@ -161,6 +161,10 @@
     justify-content: center;
 }
 /* loc sp */
+
+.loc_container-mb{
+    display: none;
+}
 .loc_sp{
     background:  rgba(250, 186, 91, 0.855);
     position:sticky;
@@ -1040,6 +1044,9 @@ input{
 
 
 
+    .loc_container-mb{
+        display: block;
+    }
 
     .loc_list-mb {
         display: flex;
