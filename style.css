@@ -126,6 +126,88 @@
     width: 100%;
     
 }
+
+
+/* dich vu */
+
+.dich_vu{
+    height: 600px;
+    width: 100%;
+    background:rgb(14 15 17);
+    
+}
+.dv_ctn{
+    display: flex;
+}
+
+.dv_tit{
+    width: 30%;
+    padding: 80px 40px 40px 40px;
+    color: wheat;
+}
+
+
+.dv_inner {
+    width: 70%;
+    overflow-y: hidden; /* ẩn thanh cuộn dọc */
+    overflow-x: auto; /* cho phép thanh cuộn ngang nếu cần */
+    display: flex;
+}
+
+.dv_inner::-webkit-scrollbar {
+    width: 5px; /* ẩn thanh cuộn ngang */
+}
+
+
+
+.dv_item{
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin:0 15px;
+    margin-top: 80px;
+}
+
+.dv_text{
+    font-size: 3.5rem;
+    font-weight: 700;
+}
+
+.dv_item_tl1{
+    color: wheat;
+    font-size: 2.5rem;
+    cursor: pointer;
+
+
+}
+.dv_item_tl2{
+    color: wheat;
+    font-size: 1.5rem;
+}
+
+.dv_item_hinh{
+    width: 470px;
+    height: 270px;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.dv_item_img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.5s;
+    cursor: pointer;
+   
+}
+.dv_item_img:hover{
+    transform: scale(1.1);
+}
+
+
+
+
 .cn_img{
     width: 100%;
 }
@@ -399,8 +481,10 @@
   }
   .event_hinh{
     overflow: hidden;
-    padding: 0 40px 0 0;
+    margin-right: 40px;
+    padding: 0;
     flex-grow: 1;
+    border-radius: 15px;
 
   }
   .button_xemthem{
@@ -408,11 +492,16 @@
   }
   .event_img{
     width: 100%;
-    display: flex;
+    height: 100%;
     /* giu ty le khung hinh */
     object-fit: cover;
+    transition: 0.5s;
 
   }
+  .event_img:hover{
+    transform: scale(1.1);
+  }
+
   .carousel-control-prev{
     justify-content: flex-start;
   }

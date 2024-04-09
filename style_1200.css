@@ -281,4 +281,86 @@
         background-color:#3e221b ;
     }
 
+
+
+    
+/* dich vu */
+
+.dich_vu{
+    height: 550px;
+    width: 100%;
+    background:rgb(14 15 17);
+    
+}
+.dv_ctn{
+    display: flex;
+}
+
+.dv_tit{
+    width: 30%;
+    padding: 80px 40px 40px 40px;
+    color: wheat;
+}
+
+
+.dv_inner {
+    width: 70%;
+    overflow-y: hidden; /* ẩn thanh cuộn dọc */
+    overflow-x: auto; /* cho phép thanh cuộn ngang nếu cần */
+    display: flex;
+}
+
+.dv_inner::-webkit-scrollbar {
+    width: 5px; /* ẩn thanh cuộn ngang */
+}
+
+
+
+.dv_item{
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin:0 15px;
+    margin-top: 80px;
+}
+
+.dv_text{
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.dv_item_tl1{
+    color: wheat;
+    font-size: 2.5rem;
+    cursor: pointer;
+
+
+}
+.dv_item_tl2{
+    color: wheat;
+    font-size: 1.5rem;
+}
+
+.dv_item_hinh{
+    width: 470px;
+    height: 270px;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.dv_item_img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.5s;
+    cursor: pointer;
+   
+}
+.dv_item_img:hover{
+    transform: scale(1.1);
+}
+
+
+
 }
