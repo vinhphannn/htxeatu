@@ -366,13 +366,26 @@
     right: 90px;
     width: 300px;
     height: 400px;
-    border: 1px solid #ccc;
+    border: 2px solid #000000;
     overflow-y: scroll;
-    background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #959393;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     border-radius: 5px;
+    padding-bottom: 40px;
     margin-bottom: 15px;
   }
+
+  #chat-container::-webkit-scrollbar {
+    width: 5px; /* Đặt chiều rộng thanh cuộn */
+}
+
+#chat-container::-webkit-scrollbar-track {
+    background-color: #eaeaea; /* Đặt màu nền cho thanh cuộn */
+}
+
+#chat-container::-webkit-scrollbar-thumb {
+    background-color: #888; /* Đặt màu cho phần nằm trong thanh cuộn */
+}
   
   #chat-messages {
     padding: 10px;
@@ -382,37 +395,50 @@
   .message {
     margin-bottom: 10px;
     padding: 8px 12px;
-    border-radius: 5px;
     background-color: #f0f0f0;
   }
   
   .user-message {
+    width: 90%;
     background-color: #007bff;
     color: #fff;
-    text-align: left;
+    text-align: right;
+    margin-left: 10%;
+    margin-bottom: 20PX;
+    font-size: 1.5rem;
+    border-radius: 10px 0 10px 10px;
+
   }
   
   .bot-message {
+    width: 90%;
+    margin-right: 10%;
     background-color: #4caf50;
     color: #fff;
     text-align: left;
+    margin-bottom: 20PX;
+    font-size: 1.5rem;
+    border-radius:0 10px 10px 10px;
+
   }
   
   #input-message-container {
-    width: 280px;
+    width: 290px;
     display: flex;
     align-items: center;
     justify-content: flex-start;
     position:fixed;
-    bottom: 15%;
+    bottom: 120px;
   }
   
   #input-message {
     flex: 1;
-    margin-right: 10px;
+    margin-right: 2px;
     padding: 8px;
     border: 1px solid #ccc;
     border-radius: 5px;
+    height: 40px;
+    font-size: 1.5rem;
   }
   
   #send-button {
@@ -422,6 +448,8 @@
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    height: 40px;
+    width: 50px;
   }
   
   #chat-toggle {
@@ -431,12 +459,18 @@
     bottom: 120px;
     right: 30px;
     padding: 10px;
-    background-color: #007bff;
+    background-color: #053263;
     color: #fff;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    transition: 0.5;
   }
+  #chat-toggle:hover {
+    transform: scale(0.95);
+    background-color: #053263;
+  }
+  
 
 /* su kien  */
   .event{

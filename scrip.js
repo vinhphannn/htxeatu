@@ -6,7 +6,7 @@ var chatOpen = false;
     
     if (message.trim() === "") return;
     
-    appendMessage("You: " + message, 'user-message');
+    appendMessage(  message , 'user-message');
     
     // Bot response (for demonstration purposes, this is a static response)
     setTimeout(function() {
@@ -52,22 +52,33 @@ function sendMessage() {
     
     if (message.trim() === "") return;
     
-    appendMessage("You: " + message, 'user-message');
+    appendMessage(message, 'user-message');
 
     // Kiểm tra nội dung tin nhắn để đưa ra phản hồi phù hợp
     var response;
     if (message.toLowerCase().includes("bây giờ là mấy giờ")) {
-        response = "Bot: Hiện tại là " + getCurrentTime() + ".";
+        response = " Hiện tại là " + getCurrentTime() + ".";
     } else if (message.toLowerCase().includes("helo")) {
-        response = "Bot: xin chào rất vui được gặp bạn.";
+        response = "Eatu xin chào, bạn cần giúp đỡ gì không?";
     } else if (message.toLowerCase().includes("web của tôi")) {
-        response = "Bot: HTX EATU COFFEE.";
+        response = " HTX EATU COFFEE.";
     } else if (message.toLowerCase().includes("my web")) {
-        response = "Bot: Trang web của bạn viết về HTX nông nghiệp.";
+        response = " Trang web của bạn viết về HTX nông nghiệp.";
+    } else if (message.toLowerCase().includes("hỗ trợ")) {
+        response = " Các Dịch Vụ Cung Cấp:\n" +
+                   " 1. Hỗ Trợ Kỹ Thuật\n" +
+                   " 2. Tiếp Thị Sản Phẩm\n" +
+                   " 3. Quản Lý Nông Nghiệp\n" +
+                   " 4. Đào Tạo và Phát Triển ";
+    }
+     else if (message.toLowerCase().includes("hỗ trợ canh tác")) {
+        response = " Hãy để lại tên và số điện thoại để chuyên viên tư vấn cho bạn.";
+    } else if (message.toLowerCase().includes("tôi muốn vay vốn")) {
+        response = " Hãy để lại tên và số điện thoại để chuyên viên tư vấn cho bạn.";
     } 
      else {
         // Bot response (for demonstration purposes, this is a static response)
-        response = "Bot: Xin chào, tôi có thể giúp gì cho bạn.";
+        response = "Eatu Xin chào. bạn cần hỗ trợ gì không?";
     }
 
     // Phản hồi tin nhắn
@@ -89,6 +100,7 @@ function getCurrentTime() {
     // Định dạng giờ và phút thành chuỗi "HH:MM"
     return (hours < 10 ? '0' : '') + hours + ':' + (minutes < 10 ? '0' : '') + minutes;
 }
+
 
 
 // scroll top
