@@ -11,7 +11,7 @@ $(document).ready(function() {
         appendMessage(greetingMessage, 'bot-message');
 
         // Hiển thị hộp chat
-        chatContainer.fadeIn();
+
     }
     chatOpen = !chatOpen;
 }
