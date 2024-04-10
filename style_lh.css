@@ -151,6 +151,7 @@
     width: 80%;
     height: 35px;
     border-radius: 5px;
+    font-size: 1.8rem;
 }
 .form_ip_item:focus{
     box-shadow:  0 4px 8px 0 rgba(33, 2, 2, 0.695);
