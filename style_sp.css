@@ -1,3 +1,50 @@
+:root{
+    --white-color: #fff;
+    --black-color: #000;
+    --text-color: #333;
+
+}
+*{
+    box-sizing: inherit;
+}
+html{
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    /* font-family: "Roboto", sans-serif; */
+    font-family: 'Times New Roman', Times, serif;
+    box-sizing: border-box;
+}
+p{
+    font-size: 1rem;
+}
+.grid{
+    width: 1200px;
+    max-width: 100%;
+    margin: auto;
+    height: auto;
+   
+}
+.grid__ful-width{
+    width:100%;
+}
+.grid__row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.tit{
+    text-align: center;
+    font-size: 2.5rem;
+    padding: 20px;
+    font-weight: 500;
+}
+.order2{
+    order: 2;
+}
+
+.order1{
+    order: 1;
+}
+
 
 .header{
     width: 100%;
