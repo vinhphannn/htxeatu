@@ -1,6 +1,22 @@
 $(document).ready(function() {
   var chatOpen = false;
 
+  function toggleChat() {
+    var chatContainer = $("#chat-container");
+    if (chatOpen) {
+        chatContainer.fadeOut();
+    } else {
+        // Thêm câu chào khi mở hộp chat
+        var greetingMessage = "Eatu coffe Xin chào! bạn cần hỗ trợ gì không?";
+        appendMessage(greetingMessage, 'bot-message');
+
+        // Hiển thị hộp chat
+        chatContainer.fadeIn();
+    }
+    chatOpen = !chatOpen;
+}
+toggleChat();
+
   // Gửi tin nhắn khi nhấn nút gửi hoặc nhấn Enter
   function sendMessage() {
       var input = $("#input-message");
@@ -20,10 +36,10 @@ $(document).ready(function() {
       } else if (message.toLowerCase().includes("my web")) {
           response = "Trang web của bạn viết về HTX nông nghiệp.";
       } else if (message.toLowerCase().includes("hỗ trợ")) {
-          response = "Các Dịch Vụ Cung Cấp:\n" +
-                     "1. Hỗ Trợ Kỹ Thuật\n" +
-                     "2. Tiếp Thị Sản Phẩm\n" +
-                     "3. Quản Lý Nông Nghiệp\n" +
+          response = "Các Dịch Vụ Cung Cấp: \n" +
+                     "1. Hỗ Trợ Kỹ Thuật \n" +
+                     "2. Tiếp Thị Sản Phẩm \n" +
+                     "3. Quản Lý Nông Nghiệp \n" +
                      "4. Đào Tạo và Phát Triển ";
       } else if (message.toLowerCase().includes("hỗ trợ canh tác")) {
           response = "Hãy để lại tên và số điện thoại để chuyên viên tư vấn cho bạn.";
@@ -42,6 +58,7 @@ $(document).ready(function() {
       input.val("");
       input.focus();
   }
+
 
   // Thêm tin nhắn vào hộp chat
   function appendMessage(message, className) {
