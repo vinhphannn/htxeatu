@@ -9,12 +9,9 @@ $(document).ready(function() {
         // Thêm câu chào khi mở hộp chat
         var greetingMessage = "Eatu coffe Xin chào! bạn cần hỗ trợ gì không?";
         appendMessage(greetingMessage, 'bot-message');
-
-        // Hiển thị hộp chat
-
     }
     chatOpen = !chatOpen;
-}
+    }
 toggleChat();
 
   // Gửi tin nhắn khi nhấn nút gửi hoặc nhấn Enter
@@ -35,6 +32,8 @@ toggleChat();
           response = "HTX EATU COFFEE.";
       } else if (message.toLowerCase().includes("my web")) {
           response = "Trang web của bạn viết về HTX nông nghiệp.";
+      } else if (message.toLowerCase().includes("booking")) {
+            response = "Hãy để lại tên và số điện thoại để chuyên viên liên hệ với bạn sớm nhất có thể.";
       } else if (message.toLowerCase().includes("hỗ trợ")) {
           response = "Các Dịch Vụ Cung Cấp: \n" +
                      "1. Hỗ Trợ Kỹ Thuật \n" +
